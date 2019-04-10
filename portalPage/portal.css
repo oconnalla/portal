@@ -1,0 +1,224 @@
+html, body{
+    min-height:100%;
+}
+body{
+    background-image: url('images/landingPage.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center top;
+    font-family: 'Raleway', sans-serif;
+}
+#landingPageButton{
+    background:rgba(242, 147, 191, 0.8);
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  #landingPageButton:hover{
+    background:#fff;
+    color:rgb(242, 147, 191);
+    margin-left:3%;
+  }
+  #landingPageButton:before,#landingPageButton:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: rgb(242, 147, 191);
+    transition:400ms ease all;
+  }
+  #landingPageButton:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  #landingPageButton:hover:before,#landingPageButton:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  #landingPageButton a{
+    text-decoration: none;
+    color:#fff;
+  }
+    #landingPageButton a:hover{
+    text-decoration: none;
+    color:rgb(242, 147, 191);
+  }
+  #landingGreeting{
+    margin-top: 10%;
+    font-family: 'Tangerine', cursive;
+    font-weight: lighter;
+    font-size: 120px;
+  }
+  .container{
+    min-height:100%;
+  }
+  nav ul li{
+    list-style-type: none;
+    text-decoration: none; 
+  }
+  nav a{
+     color:black;
+     text-decoration: none;
+     font-family: 'Raleway', sans-serif;  
+  }
+  #aboutMeDiv{
+      width:43%;
+      padding:10px;
+      margin-left:.5%;
+      border: 8px double rgba(242, 147, 191, 0.2);
+      overflow:auto;
+  }
+  #aboutMeH1{
+    margin-top:15%;
+    font-size: 70px;;
+    font-family: 'Tangerine', cursive;
+    font-weight: lighter;
+  }
+  #arielPhoto{
+    height: 200px;
+    float:left;
+    padding:5px;
+    border: 6px double rgba(242, 147, 191, 0.1);
+    border-radius:50%;
+  }
+  img{
+      height:200px;
+      float:left;
+      padding:15px;
+  }
+  #aboutMeDiv p{
+      padding-bottom:5px;
+      clear:both;
+  }
+  #myLanguagesP{
+    margin-bottom:0px;
+    margin-top:0px;
+    float:right;
+  }
+  footer a{
+    text-decoration: none;
+    color:black;
+  }
+
+  /* navigation bar, responsive by going to side when on cell screen */
+  ul.topnav {
+    list-style-type: none;
+    margin-bottom: 1%;
+    padding: 0;
+    overflow: hidden;
+    width:55%;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 9px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {
+      background-color: rgba(242, 147, 191, 0.8);
+      color:white;
+    }
+  
+  ul.topnav li a.active {
+      background-color: rgb(242, 147, 191);
+      color:white;
+    }
+  
+  ul.topnav li.right {
+      float: right;
+    }
+    #devJoke{
+        height:100px;
+        float:right;
+        margin-right:8%;
+    }
+    #officeNotebook{
+        display:none;
+    }
+    footer{
+        width:100%;
+        text-align: center;
+        bottom:0;
+        background-color: rgba(255, 255, 255, 0.7);
+        margin-left:0;
+        clear:both;
+        position:absolute;
+    }
+  
+  @media screen and (max-width: 600px) {
+    body{
+        background-size:auto;
+       
+    }
+    ul.topnav li.right, ul.topnav li {
+      float: none;
+    }
+    ul.topnav {
+       width:100%;
+       background-color: rgba(255, 255, 255, 0.7);
+       margin:auto;
+       margin-bottom:20%;
+       
+    }
+
+    #aboutMeDiv{
+        width:90%;
+        height:100%;
+        background-color: rgba(255, 255, 255, 0.25);
+        margin:auto;
+        margin-bottom:20%;
+        border:none;
+        text-align: center;
+    }
+    #aboutMeDiv img{
+      float:none;
+    }
+    #aboutMeDiv p{
+        background-color: rgba(255, 255, 255, 0.7);
+        padding:5%;
+        margin:auto;
+        border: 8px double rgba(242, 147, 191, 0.5);
+        margin-bottom:20%;
+        float:none;
+        /* width:100%;
+        display:block;
+        position: */
+    }
+    #myLanguagesP{
+      margin:auto;
+      line-height: 2rem;
+      text-align:center;
+    }
+    #devJoke{
+        display:none;
+    }
+    #officeNotebook{
+        display: block;
+        width: 90%;
+        margin:auto;
+        margin-top:0;
+    }
+    footer{
+        bottom:0;
+        text-align: center;
+        background-color: rgba(242, 147, 191, 0.6);
+        margin: auto;
+        display: block;
+        position:relative;
+    }
+  }
