@@ -3,7 +3,7 @@ html, body{
 }
 body{
     background-image: url('images/landingPage.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size:cover;
     background-position: center top;
     font-family: 'Raleway', sans-serif;
@@ -83,6 +83,13 @@ body{
     font-size: 70px;;
     font-family: 'Tangerine', cursive;
     font-weight: lighter;
+    margin-bottom:0px;
+  }
+  #nameEl{
+    margin:0px;
+    margin-bottom:10%;
+    color:rgb(242, 147, 191);
+    font-weight: lighter;
   }
   #arielPhoto{
     height: 200px;
@@ -90,11 +97,6 @@ body{
     padding:5px;
     border: 6px double rgba(242, 147, 191, 0.1);
     border-radius:50%;
-  }
-  img{
-      height:200px;
-      float:left;
-      padding:15px;
   }
   #aboutMeDiv p{
       padding-bottom:5px;
@@ -112,7 +114,6 @@ body{
 
   /* navigation bar, responsive by going to side when on cell screen */
   ul.topnav {
-    list-style-type: none;
     margin-bottom: 1%;
     padding: 0;
     overflow: hidden;
@@ -151,13 +152,13 @@ body{
         display:none;
     }
     footer{
-        width:100%;
+        min-width:99%;
         text-align: center;
         bottom:0;
         background-color: rgba(255, 255, 255, 0.7);
-        margin-left:0;
+        margin:auto;
         clear:both;
-        position:absolute;
+        position:absolute;   
     }
   
   @media screen and (max-width: 600px) {
@@ -178,12 +179,11 @@ body{
 
     #aboutMeDiv{
         width:90%;
-        height:100%;
         background-color: rgba(255, 255, 255, 0.25);
         margin:auto;
-        margin-bottom:20%;
         border:none;
         text-align: center;
+  
     }
     #aboutMeDiv img{
       float:none;
@@ -192,33 +192,68 @@ body{
         background-color: rgba(255, 255, 255, 0.7);
         padding:5%;
         margin:auto;
+        margin-top: 5%;
         border: 8px double rgba(242, 147, 191, 0.5);
-        margin-bottom:20%;
         float:none;
-        /* width:100%;
-        display:block;
-        position: */
     }
     #myLanguagesP{
       margin:auto;
+      margin-top:2%;
       line-height: 2rem;
       text-align:center;
+      font-size: 1.1rem;
+      margin-bottom:50px;
+    }
+    #nameEl{
+      background-image: linear-gradient(to bottom right, white, rgba(242, 147, 191, 0.6));
+      color:black;
     }
     #devJoke{
         display:none;
     }
+    #notebookBorder{
+      margin:auto;
+    }
     #officeNotebook{
         display: block;
-        width: 90%;
+        width: 80%;
+        padding:2.5%;
         margin:auto;
         margin-top:0;
+        margin-bottom:10%;
+        border: 6px double rgba(242, 147, 191, 0.6);
+        background-color: rgba(255, 255, 255, 0.7);
     }
     footer{
         bottom:0;
         text-align: center;
-        background-color: rgba(242, 147, 191, 0.6);
+        background-image: linear-gradient(to bottom right, white, rgba(242, 147, 191, 0.6));
         margin: auto;
         display: block;
         position:relative;
     }
   }
+  @media (min-width:650px) and (max-width: 1024px) {
+    body{
+      background-image: url('images/landingPageTablet.jpeg');
+    }
+    #aboutMeDiv{
+      background-color: rgba(255, 255, 255, 0.7);
+  }
+  #devJoke{
+    display:none;
+}
+  footer{
+    position: relative;
+  }
+}
+
+@media (min-width:2000px) and (max-width: 4000px)  {
+  body{
+    background-image: url('images/landingPageTablet.jpeg');
+  }
+  #devJoke{
+    display:none;
+}
+}
+
